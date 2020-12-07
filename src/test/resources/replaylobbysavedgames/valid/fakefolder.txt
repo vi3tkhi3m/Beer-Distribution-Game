@@ -1,0 +1,1 @@
+This file may not be counted as a gamefile in function getFolder

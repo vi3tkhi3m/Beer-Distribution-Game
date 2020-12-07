@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.*?>
+<?import java.lang.String?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.asd2.beerdistributiongame.frontend.SettingsHandler">
+    <children>
+        <Button fx:id="backToMenu" layoutX="14.0" layoutY="26.0" mnemonicParsing="false" onAction="#onBackToMainMenuPressed" text="Main menu">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Text fx:id="pageTitle" layoutX="336.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Settings">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Text>
+        <Line endX="699.0" layoutX="101.0" layoutY="90.0" startX="-100.0" />
+        <TextField fx:id="playerName" layoutX="302.0" layoutY="250.0" prefHeight="35.0" prefWidth="200.0" onKeyReleased="#onChangePlayerNameChanged" onAction="#onEnter" promptText="Enter new name...." />
+        <Button fx:id="changePlayerName" layoutX="534.0" layoutY="250.0" mnemonicParsing="false" onAction="#onChangePlayerNamePressed" prefHeight="35.0" prefWidth="106.0" text="Change name">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Label fx:id="changePlayerNameLabel" layoutX="319.0" layoutY="204.0" text="Change player name">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="gameLanguage" layoutX="302.0" layoutY="360.0" onAction="#onLanguageChange" prefHeight="35.0" prefWidth="200.0" promptText="English">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="English" />
+                    <String fx:value="Nederlands" />
+                    <String fx:value="Deutsch" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+        <Label fx:id="userNameError" alignment="CENTER" contentDisplay="CENTER" disable="true" layoutX="232.0" layoutY="223.0" prefHeight="28.0" prefWidth="336.0" text="Name has to be between 1 and 24 characters long" textFill="RED" visible="false" />
+        <Label fx:id="changeGameLanguageText" layoutX="306.0" layoutY="318.0" text="Change game language">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

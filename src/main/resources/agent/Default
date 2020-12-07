@@ -1,0 +1,15 @@
+@Totalcost = ProductionCost + BacklogCost - DeliveryGain
+@Turnsleft = Budget / (ProductionCost + BacklogCost - DeliveryGain)
+@TurnsleftBecauseStock = Budget / (Stock * StockCost)
+@TurnsleftBecauseBacklog = Budget / (Backlog * BacklogCost)
+
+NewOrder = (Backlog * 2) + Stock / (Stock + 1)
+
+if
+[TurnsleftBecauseStock < 2]
+then
+[Order = Order / 2];
+if
+[TurnsleftBecauseBacklog < 2]
+then
+[Order = Order * 2];

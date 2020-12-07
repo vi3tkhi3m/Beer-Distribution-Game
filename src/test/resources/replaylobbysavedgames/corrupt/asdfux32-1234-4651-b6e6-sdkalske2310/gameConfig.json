@@ -1,0 +1,21 @@
+{
+  "gameID": "asdfux32-1234-4651-b6e6-sdkalske2310",
+  "gameName" : "Test",
+  "gameMode" : "LINEAR",
+  "overviewType" : "LOCAL",
+  "initialStock" : 10,
+  "initialBudget" : 100,
+  "turnDuration" : 60,
+  "backlogCost" : 2,
+  "stockCost" : 1,
+  "productionCost" : 1,
+  "maxTurns" : 40,
+  "infiniteTurns" : false,
+  "quantityOfFactories" : 1,
+  "quantityOfWarehouses" : 1,
+  "quantityOfWholesales" : 1,
+  "quantityOfRetailers" : 1,
+  "retailProfit" : 5,
+  "minCustomerDemand" : 1,
+  "maxCustomerDemand" : 20
+}

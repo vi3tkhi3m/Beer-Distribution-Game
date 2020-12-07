@@ -1,0 +1,370 @@
+[
+  {
+    "turnNumber": 1,
+    "playerStates": {
+      "PlayerB": {
+        "player": "uuidPlayerB",
+        "gameAgentActive": false,
+        "gameAgentFormula": "",
+        "backlogs": {
+          "Wholesale0": 2
+        },
+        "stock": 10,
+        "budget": 100,
+        "incomingOrders": {
+          "PlayerF": 10
+        },
+        "outgoingOrder": 10,
+        "incomingDelivery": 0,
+        "outgoingDeliveries": {
+          "PlayerF": 0
+        }
+      },
+      "PlayerA": {
+        "player": "uuidPlayerA",
+        "placedOrder": {
+          "origin": "",
+          "destination": "",
+          "amount": -1
+        },
+        "gameAgentActive": false,
+        "gameAgentFormula": "",
+        "backlogs": {
+          "Wholesale0": 3
+        },
+        "stock": 17,
+        "budget": 100,
+        "incomingOrders": {
+          "CONSUMER": 10
+        },
+        "outgoingOrder": 11,
+        "incomingDelivery": 0,
+        "outgoingDeliveries": {
+          "PlayerF": 0
+        }
+      },
+      "PlayerE": {
+        "player": "uuidPlayerE",
+        "placedOrder": {
+          "origin": "",
+          "destination": "",
+          "amount": -1
+        },
+        "gameAgentActive": false,
+        "gameAgentFormula": "",
+        "backlogs": {
+          "Wholesale0": 6
+        },
+        "stock": 13,
+        "budget": 100,
+        "incomingOrders": {
+          "CONSUMER": 10
+        },
+        "outgoingOrder": 12,
+        "incomingDelivery": 0,
+        "outgoingDeliveries": {
+          "PlayerF": 0
+        },
+        "deliveryGain": 0
+      },
+      "PlayerD": {
+        "player": "uuidPlayerD",
+        "placedOrder": {
+          "origin": "",
+          "destination": "",
+          "amount": -1
+        },
+        "gameAgentActive": false,
+        "gameAgentFormula": "",
+        "backlogs": {
+          "Wholesale0": 3
+        },
+        "stock": 9,
+        "budget": 100,
+        "incomingOrders": {
+          "PlayerF": 10
+        },
+        "outgoingOrder": 13,
+        "incomingDelivery": 0,
+        "outgoingDeliveries": {
+          "PlayerF": 0
+        },
+        "deliveryGain": 0
+      },
+      "PlayerC": {
+        "player": "uuidPlayerC",
+        "placedOrder": {
+          "origin": "",
+          "destination": "",
+          "amount": -1
+        },
+        "gameAgentActive": false,
+        "gameAgentFormula": "",
+        "backlogs": {
+          "Wholesale0": 3
+        },
+        "stock": 0,
+        "budget": 100,
+        "incomingOrders": {
+          "PlayerF": 10
+        },
+        "outgoingOrder": 14,
+        "incomingDelivery": 0,
+        "outgoingDeliveries": {
+          "PlayerF": 0
+        },
+        "deliveryGain": 0
+      }
+    }
+  },
+  {
+    "turnNumber": 2,
+    "playerStates": {
+      "PlayerB": {
+        "player": "uuidPlayerB",
+        "placedOrder": {
+          "origin": "",
+          "destination": "",
+          "amount": -1
+        },
+        "gameAgentActive": false,
+        "gameAgentFormula": "",
+        "backlogs": {
+          "Wholesale0": 3
+        },
+        "stock": 3,
+        "budget": 100,
+        "incomingOrders": {
+          "PlayerF": 0
+        },
+        "outgoingOrder": 24,
+        "incomingDelivery": 0,
+        "outgoingDeliveries": {
+          "PlayerF": 0
+        },
+        "deliveryGain": 0
+      },
+      "PlayerA": {
+        "player": "uuidPlayerA",
+        "placedOrder": {
+          "origin": "",
+          "destination": "",
+          "amount": -1
+        },
+        "gameAgentActive": false,
+        "gameAgentFormula": "",
+        "backlogs": {
+          "Wholesale0": 15
+        },
+        "stock": 0,
+        "budget": 70,
+        "incomingOrders": {
+          "PlayerF": 20
+        },
+        "outgoingOrder": 15,
+        "incomingDelivery": 0,
+        "outgoingDeliveries": {
+          "PlayerF": 0
+        },
+        "deliveryGain": 0
+      },
+      "PlayerE": {
+        "player": "uuidPlayerE",
+        "placedOrder": {
+          "origin": "",
+          "destination": "",
+          "amount": -1
+        },
+        "gameAgentActive": false,
+        "gameAgentFormula": "",
+        "backlogs": {
+          "Wholesale0": 3
+        },
+        "stock": 14,
+        "budget": 60,
+        "incomingOrders": {
+          "CONSUMER": 10
+        },
+        "outgoingOrder": 20,
+        "incomingDelivery": 0,
+        "outgoingDeliveries": {
+          "PlayerF": 0
+        },
+        "deliveryGain": 0
+      },
+      "PlayerD": {
+        "player": "uuidPlayerD",
+        "placedOrder": {
+          "origin": "",
+          "destination": "",
+          "amount": -1
+        },
+        "gameAgentActive": false,
+        "gameAgentFormula": "",
+        "backlogs": {
+          "Wholesale0": 3
+        },
+        "stock": 0,
+        "budget": 100,
+        "incomingOrders": {
+          "PlayerF": 10
+        },
+        "outgoingOrder": 25,
+        "incomingDelivery": 0,
+        "outgoingDeliveries": {
+          "PlayerF": 0
+        },
+        "deliveryGain": 0
+      },
+      "PlayerC": {
+        "player": "uuidPlayerC",
+        "placedOrder": {
+          "origin": "",
+          "destination": "",
+          "amount": -1
+        },
+        "gameAgentActive": false,
+        "gameAgentFormula": "",
+        "backlogs": {
+          "Wholesale0": 3
+        },
+        "stock": 0,
+        "budget": 100,
+        "incomingOrders": {
+          "PlayerF": 10
+        },
+        "outgoingOrder": 26,
+        "incomingDelivery": 0,
+        "outgoingDeliveries": {
+          "PlayerF": 0
+        },
+        "deliveryGain": 0
+      }
+    }
+  },
+  {
+    "turnNumber": 3,
+    "playerStates": {
+      "PlayerB": {
+        "player": "uuidPlayerB",
+        "placedOrder": {
+          "origin": "",
+          "destination": "",
+          "amount": -1
+        },
+        "gameAgentActive": false,
+        "gameAgentFormula": "",
+        "backlogs": {
+          "Wholesale0": 3
+        },
+        "stock": 0,
+        "budget": 100,
+        "incomingOrders": {
+          "PlayerF": 10
+        },
+        "outgoingOrder": 27,
+        "incomingDelivery": 0,
+        "outgoingDeliveries": {
+          "PlayerF": 0
+        },
+        "deliveryGain": 0
+      },
+      "PlayerA": {
+        "player": "uuidPlayerA",
+        "placedOrder": {
+          "origin": "",
+          "destination": "",
+          "amount": -1
+        },
+        "gameAgentActive": false,
+        "gameAgentFormula": "",
+        "backlogs": {
+          "Wholesale0": 3
+        },
+        "stock": 0,
+        "budget": 110,
+        "incomingOrders": {
+          "CONSUMER": 30
+        },
+        "outgoingOrder": 20,
+        "incomingDelivery": 0,
+        "outgoingDeliveries": {
+          "PlayerF": 0
+        },
+        "deliveryGain": 0
+      },
+      "PlayerE": {
+        "player": "uuidPlayerE",
+        "placedOrder": {
+          "origin": "",
+          "destination": "",
+          "amount": -1
+        },
+        "gameAgentActive": false,
+        "gameAgentFormula": "",
+        "backlogs": {
+          "Wholesale0": 3
+        },
+        "stock": 0,
+        "budget": 100,
+        "incomingOrders": {
+          "CONSUMER": 10
+        },
+        "outgoingOrder": 40,
+        "incomingDelivery": 0,
+        "outgoingDeliveries": {
+          "PlayerF": 0
+        },
+        "deliveryGain": 0
+      },
+      "PlayerD": {
+        "player": "uuidPlayerD",
+        "placedOrder": {
+          "origin": "",
+          "destination": "",
+          "amount": -1
+        },
+        "gameAgentActive": false,
+        "gameAgentFormula": "",
+        "backlogs": {
+          "Wholesale0": 3
+        },
+        "stock": 0,
+        "budget": 100,
+        "incomingOrders": {
+          "PlayerF": 10
+        },
+        "outgoingOrder": 28,
+        "incomingDelivery": 0,
+        "outgoingDeliveries": {
+          "PlayerF": 0
+        },
+        "deliveryGain": 0
+      },
+      "PlayerC": {
+        "player": "uuidPlayerC",
+        "placedOrder": {
+          "origin": "",
+          "destination": "",
+          "amount": -1
+        },
+        "gameAgentActive": false,
+        "gameAgentFormula": "",
+        "backlogs": {
+          "Wholesale0": 20
+        },
+        "stock": 0,
+        "budget": 100,
+        "incomingOrders": {
+          "PlayerF": 10
+        },
+        "outgoingOrder": 29,
+        "incomingDelivery": 0,
+        "outgoingDeliveries": {
+          "PlayerF": 0
+        },
+        "deliveryGain": 0
+      }
+    }
+  }
+]

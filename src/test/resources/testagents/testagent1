@@ -1,0 +1,6 @@
+@sumMaster = 5
+
+NewOrder = @sumMaster * 2
+
+if [ Backlog > @sumMaster ]
+then [ @sumMaster = Order + 3 + 5];

@@ -1,0 +1,69 @@
+{
+  "turnNumber" : 1,
+  "playerStates" : {
+    "Retailer0" : {
+      "role" : "RETAILER",
+      "player" : "PlayerA",
+      "placedOrder" : null,
+      "gameAgentActive" : false,
+      "gameAgentFormula" : "",
+      "backlogs" : { },
+      "stock" : 0,
+      "budget" : 0,
+      "incomingOrder" : 14,
+      "outgoingOrder" : 0,
+      "incomingDelivery" : 0,
+      "outgoingDelivery" : 0,
+      "deliveryGain" : 0,
+      "productionDelay" : 0
+    },
+    "Factroy0" : {
+      "role" : "FACTORY",
+      "player" : "PlayerD",
+      "placedOrder" : null,
+      "gameAgentActive" : false,
+      "gameAgentFormula" : "",
+      "backlogs" : { },
+      "stock" : 0,
+      "budget" : 0,
+      "incomingOrder" : 0,
+      "outgoingOrder" : 0,
+      "incomingDelivery" : 0,
+      "outgoingDelivery" : 0,
+      "deliveryGain" : 0,
+      "productionDelay" : 0
+    },
+    "Wholesaler0" : {
+      "role" : "WHOLESALE",
+      "player" : "PlayerB",
+      "placedOrder" : null,
+      "gameAgentActive" : false,
+      "gameAgentFormula" : "",
+      "backlogs" : { },
+      "stock" : 0,
+      "budget" : 0,
+      "incomingOrder" : 0,
+      "outgoingOrder" : 0,
+      "incomingDelivery" : 0,
+      "outgoingDelivery" : 0,
+      "deliveryGain" : 0,
+      "productionDelay" : 0
+    },
+    "Distributor0" : {
+      "role" : "WAREHOUSE",
+      "player" : "PlayerC",
+      "placedOrder" : null,
+      "gameAgentActive" : false,
+      "gameAgentFormula" : "",
+      "backlogs" : { },
+      "stock" : 0,
+      "budget" : 0,
+      "incomingOrder" : 0,
+      "outgoingOrder" : 0,
+      "incomingDelivery" : 0,
+      "outgoingDelivery" : 0,
+      "deliveryGain" : 0,
+      "productionDelay" : 0
+    }
+  }
+}

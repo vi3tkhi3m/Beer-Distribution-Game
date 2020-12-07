@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.asd2.beerdistributiongame.frontend.MainMenuHandler">
+    <children>
+        <Text layoutX="185.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The beer distribution game">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Text>
+        <Text fx:id="usernameText" layoutX="370.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Button fx:id="hostGameButton" layoutX="321.0" layoutY="200.0" mnemonicParsing="false" onAction="#hostGamePressed" prefHeight="35.0" prefWidth="150.0" text="Host game" />
+        <Button fx:id="optionsButton" layoutX="321.0" layoutY="440.0" mnemonicParsing="false" onAction="#optionsPressed" prefHeight="35.0" prefWidth="150.0" text="Options" />
+        <Button fx:id="joinGameButton" layoutX="321.0" layoutY="250.0" mnemonicParsing="false" onAction="#joinGamePressed" prefHeight="35.0" prefWidth="150.0" text="Join game" />
+        <Button fx:id="createGameAgentButton" layoutX="321.0" layoutY="300.0" mnemonicParsing="false" onAction="#createGameAgentPressed" prefHeight="35.0" prefWidth="150.0" text="Create game agent" />
+        <Button fx:id="replayGameButton" layoutX="321.0" layoutY="394.0" mnemonicParsing="false" onAction="#replayGamePressed" prefHeight="35.0" prefWidth="150.0" text="Replay game" />
+        <Button fx:id="quitGameButton" layoutX="321.0" layoutY="486.0" mnemonicParsing="false" onAction="#quitGamePressed" prefHeight="35.0" prefWidth="150.0" text="Quit" />
+      <Button fx:id="editGameAgentButton" layoutX="321.0" layoutY="348.0" mnemonicParsing="false" onAction="#editGameAgentPressed" prefHeight="35.0" prefWidth="150.0" text="Edit game agent" />
+    </children>
+</AnchorPane>

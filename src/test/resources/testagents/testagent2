@@ -1,0 +1,23 @@
+@remainingStock = Stock - IncomingOrder + IncomingDelivery - Backlog
+@var = IncomingOrder + Stock * Backlog
+@var = 5^(1/3)
+@var = 7.5 + Stock^8 * @sum
+@newVar = 5*(7-Stock)^IncomingOrder
+@newVar = Budget/ProductionCost - Order
+
+NewOrder = @remainingStock - 3^5 - 4*√(5+Backlog)
+
+if [Order < 5]
+then [Order = Order + @remainingStock];
+
+if [@remainingStock < 10]
+then [@remainingStock = @remainingStock + 10];
+
+if [@var > IncomingOrder + Backlog*√(2-10^3)]
+then [@varNew = 5*(7-Stock)^IncomingOrder + 7 / Backlog];
+
+if [Stock^3 + @newVar < Backlog*√2+10^3]
+then [Order = 6-IncomingDelivery^(1/StockCost)];
+
+if [Stock = 7 + Stock^8 * @sum]
+then [@newOrder = (Order - (Backlog - ProductionCost) /ProductionCost) * @oldOrder];

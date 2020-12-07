@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.asd2.beerdistributiongame.frontend.PersonalStatisticsHandler">
+   <children>
+      <Button fx:id="backToMenu" layoutX="14.0" layoutY="26.0" mnemonicParsing="false" onAction="#onBackToMenu" text="Main menu">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Text fx:id="username" layoutX="693.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Timon#5">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Label layoutX="346.0" layoutY="96.0" text="Personal results">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="119.0" prefHeight="20.0" prefWidth="104.0" text="Starting Budget:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="startingBudget" editable="false" layoutX="223.0" layoutY="117.0" prefHeight="25.0" prefWidth="50.0" promptText="0" />
+      <Button fx:id="goToGraph" layoutX="17.0" layoutY="556.0" mnemonicParsing="false" onAction="#onGoToGraph" prefHeight="30.0" prefWidth="99.0" text="Graph">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Line endX="699.0" layoutX="101.0" layoutY="90.0" startX="-100.0" />
+      <Text layoutX="291.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Results">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Label layoutX="630.0" layoutY="32.0" text="Naam:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="goToRankings" layoutX="123.0" layoutY="556.0" mnemonicParsing="false" onAction="#onGoToRankings" prefHeight="30.0" prefWidth="99.0" text="Rankings">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="goToGameView" layoutX="682.0" layoutY="556.0" mnemonicParsing="false" onAction="#onGoToGameView" prefHeight="30.0" prefWidth="99.0" text="Gameview">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="personalStatisticsTable" layoutX="17.0" layoutY="149.0" onMouseClicked="#onGameView" prefHeight="405.0" prefWidth="769.0">
+        <columns>
+          <TableColumn fx:id="rounds" prefWidth="52.0" resizable="false" text="Round" />
+            <TableColumn fx:id="budget" prefWidth="51.0" resizable="false" text="Budget" />
+            <TableColumn fx:id="stock" prefWidth="52.0" resizable="false" text="Stock" />
+            <TableColumn fx:id="backlog" editable="false" minWidth="-1.0" prefWidth="62.0" resizable="false" text="Backlog" />
+          <TableColumn fx:id="incomingOrders" prefWidth="103.0" resizable="false" text="Incoming Orders" />
+            <TableColumn fx:id="outgoingOrder" prefWidth="116.0" resizable="false" text="Outgoing Order" />
+            <TableColumn fx:id="incomingDelivery" prefWidth="116.0" resizable="false" text="Incoming Delivery" />
+            <TableColumn fx:id="outgoingDeliveries" prefWidth="129.0" resizable="false" text="Outgoing Deliveries" />
+            <TableColumn fx:id="gameAgent" prefWidth="87.0" resizable="false" text="Game Agent" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

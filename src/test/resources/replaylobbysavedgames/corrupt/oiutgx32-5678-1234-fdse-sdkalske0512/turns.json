@@ -1,0 +1,164 @@
+[
+  {
+    "turnNumber": 1,
+    "playerStates": {
+      "Factory0": {
+        "player": "asdfux32-1234-4651-b6e6-sdkalske2310",
+        "gameAgentActive": false,
+        "gameAgentFormula": "Order = IncomingOrder + 6",
+        "backlogs": {
+          "Wholesale0": 3
+        },
+        "stock": 10,
+        "budget": 100,
+        "incomingOrders": {
+          "Wholesale0": 0
+        },
+        "outgoingOrder": 0,
+        "incomingDelivery": 0,
+        "outgoingDeliveries": {
+          "Wholesale0": 0
+        },
+        "deliveryGain": 1
+      },
+      "Wholesale0": {
+        "player": "asdfux32-7654-1675-b6e6-sdkalske2310",
+        "gameAgentActive": false,
+        "gameAgentFormula": "Order = IncomingOrder + 6",
+        "backlogs": {
+          "Warehouse0": 3
+        },
+        "stock": 10,
+        "budget": 100,
+        "incomingOrders": {
+          "Warehouse0": 0
+        },
+        "outgoingOrder": 0,
+        "incomingDelivery": 0,
+        "outgoingDeliveries": {
+          "Warehouse0": 0
+        },
+        "deliveryGain": 1
+      },
+      "Warehouse0": {
+        "player": "oiutgx32-1973-4826-fdse-sdkalske0512",
+        "gameAgentActive": false,
+        "gameAgentFormula": "Order = IncomingOrder + 6",
+        "backlogs": {
+          "Retail0": 3
+        },
+        "stock": 10,
+        "budget": 100,
+        "incomingOrders": {
+          "Retail0": 0
+        },
+        "outgoingOrder": 0,
+        "incomingDelivery": 0,
+        "outgoingDeliveries": {
+          "Retail0": 0
+        },
+        "deliveryGain": 1
+      },
+      "Retail0": {
+        "player": "oiutgx32-5678-1234-fdse-sdkalske0512",
+        "gameAgentActive": false,
+        "gameAgentFormula": "Order = IncomingOrder + 6",
+        "backlogs": {
+          "CustomerDemand": 3
+        },
+        "stock": 10,
+        "budget": 100,
+        "incomingOrders": {
+          "CustomerDemand": 0
+        },
+        "outgoingOrder": 0,
+        "incomingDelivery": 0,
+        "outgoingDeliveries": {
+          "CustomerDemand": 0
+        },
+        "deliveryGain": 1
+      }
+    }
+  },
+  {
+    "turnNumber": 1,
+    "playerStates": {
+      "Factory0": {
+        "player": "asdfux32-1234-4651-b6e6-sdkalske2310",
+        "gameAgentActive": false,
+        "gameAgentFormula": "Order = IncomingOrder + 6",
+        "backlogs": {
+          "Wholesale0": 3
+        },
+        "stock": 10,
+        "budget": 100,
+        "incomingOrders": {
+          "Wholesale0": 0
+        },
+        "outgoingOrder": 0,
+        "incomingDelivery": 0,
+        "outgoingDeliveries": {
+          "Wholesale0": 0
+        },
+        "deliveryGain": 1
+      },
+      "Wholesale0": {
+        "player": "asdfux32-7654-1675-b6e6-sdkalske2310",
+        "gameAgentActive": false,
+        "gameAgentFormula": "Order = IncomingOrder + 6",
+        "backlogs": {
+          "Warehouse0": 3
+        },
+        "stock": 10,
+        "budget": 100,
+        "incomingOrders": {
+          "Warehouse0": 0
+        },
+        "outgoingOrder": 0,
+        "incomingDelivery": 0,
+        "outgoingDeliveries": {
+          "Warehouse0": 0
+        },
+        "deliveryGain": 1
+      },
+      "Warehouse0": {
+        "player": "oiutgx32-1973-4826-fdse-sdkalske0512",
+        "gameAgentActive": false,
+        "gameAgentFormula": "Order = IncomingOrder + 6",
+        "backlogs": {
+          "Retail0": 3
+        },
+        "stock": 10,
+        "budget": 100,
+        "incomingOrders": {
+          "Retail0": 0
+        },
+        "outgoingOrder": 0,
+        "incomingDelivery": 0,
+        "outgoingDeliveries": {
+          "Retail0": 0
+        },
+        "deliveryGain": 1
+      },
+      "Retail0": {
+        "player": "oiutgx32-5678-1234-fdse-sdkalske0512",
+        "gameAgentActive": false,
+        "gameAgentFormula": "Order = IncomingOrder + 6",
+        "backlogs": {
+          "CustomerDemand": 3
+        },
+        "stock": 10,
+        "budget": 100,
+        "incomingOrders": {
+          "CustomerDemand": 0
+        },
+        "outgoingOrder": 0,
+        "incomingDelivery": 0,
+        "outgoingDeliveries": {
+          "CustomerDemand": 0
+        },
+        "deliveryGain": 1
+      }
+    }
+  }
+]

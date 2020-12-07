@@ -1,0 +1,173 @@
+[
+  {
+    "turnNumber": 0,
+    "playerStates": {
+      "6ca4c6d7-14d2-4efe-bd73-b92c827b6809": {
+        "placedOrder": -1,
+        "gameAgentActive": false,
+        "gameAgentFormula": "",
+        "backlogs": {},
+        "stock": 0,
+        "budget": 0,
+        "incomingOrder": 2,
+        "outgoingOrder": 2,
+        "incomingDelivery": 0,
+        "outgoingDelivery": 0,
+        "deliveryGain": 0
+      },
+      "876543-5646-48e9-b7ac-5950130ec11e": {
+        "placedOrder": -1,
+        "gameAgentActive": false,
+        "gameAgentFormula": "",
+        "backlogs": {},
+        "stock": 0,
+        "budget": 0,
+        "incomingOrder": 0,
+        "outgoingOrder": 0,
+        "incomingDelivery": 0,
+        "outgoingDelivery": 0,
+        "deliveryGain": 0
+      },
+      "1234567-5646-48e9-b7ac-5950130ec11e": {
+        "placedOrder": -1,
+        "gameAgentActive": false,
+        "gameAgentFormula": "",
+        "backlogs": {},
+        "stock": 0,
+        "budget": 0,
+        "incomingOrder": 0,
+        "outgoingOrder": 0,
+        "incomingDelivery": 0,
+        "outgoingDelivery": 0,
+        "deliveryGain": 0
+      },
+      "hdfch5e4y-5646-48e9-b7ac-5950130ec11e": {
+        "placedOrder": -1,
+        "gameAgentActive": false,
+        "gameAgentFormula": "",
+        "backlogs": {},
+        "stock": 0,
+        "budget": 0,
+        "incomingOrder": 0,
+        "outgoingOrder": 0,
+        "incomingDelivery": 0,
+        "outgoingDelivery": 0,
+        "deliveryGain": 0
+      }
+    }
+  },
+  {
+    "turnNumber": 1,
+    "playerStates": {
+      "6ca4c6d7-14d2-4efe-bd73-b92c827b6809": {
+        "placedOrder": -1,
+        "gameAgentActive": false,
+        "gameAgentFormula": "",
+        "backlogs": {},
+        "stock": 0,
+        "budget": 0,
+        "incomingOrder": 2,
+        "outgoingOrder": 2,
+        "incomingDelivery": 0,
+        "outgoingDelivery": 0,
+        "deliveryGain": 0
+      },
+      "876543-5646-48e9-b7ac-5950130ec11e": {
+        "placedOrder": -1,
+        "gameAgentActive": false,
+        "gameAgentFormula": "",
+        "backlogs": {},
+        "stock": 0,
+        "budget": 0,
+        "incomingOrder": 0,
+        "outgoingOrder": 0,
+        "incomingDelivery": 0,
+        "outgoingDelivery": 0,
+        "deliveryGain": 0
+      },
+      "1234567-5646-48e9-b7ac-5950130ec11e": {
+        "placedOrder": -1,
+        "gameAgentActive": false,
+        "gameAgentFormula": "",
+        "backlogs": {},
+        "stock": 0,
+        "budget": 0,
+        "incomingOrder": 0,
+        "outgoingOrder": 0,
+        "incomingDelivery": 0,
+        "outgoingDelivery": 0,
+        "deliveryGain": 0
+      },
+      "hdfch5e4y-5646-48e9-b7ac-5950130ec11e": {
+        "placedOrder": -1,
+        "gameAgentActive": false,
+        "gameAgentFormula": "",
+        "backlogs": {},
+        "stock": 0,
+        "budget": 0,
+        "incomingOrder": 0,
+        "outgoingOrder": 0,
+        "incomingDelivery": 0,
+        "outgoingDelivery": 0,
+        "deliveryGain": 0
+      }
+    }
+  },
+  {
+    "turnNumber": 2,
+    "playerStates": {
+      "6ca4c6d7-14d2-4efe-bd73-b92c827b6809": {
+        "placedOrder": -1,
+        "gameAgentActive": false,
+        "gameAgentFormula": "",
+        "backlogs": {},
+        "stock": 0,
+        "budget": 0,
+        "incomingOrder": 2,
+        "outgoingOrder": 2,
+        "incomingDelivery": 0,
+        "outgoingDelivery": 0,
+        "deliveryGain": 0
+      },
+      "876543-5646-48e9-b7ac-5950130ec11e": {
+        "placedOrder": -1,
+        "gameAgentActive": false,
+        "gameAgentFormula": "",
+        "backlogs": {},
+        "stock": 0,
+        "budget": 0,
+        "incomingOrder": 0,
+        "outgoingOrder": 0,
+        "incomingDelivery": 0,
+        "outgoingDelivery": 0,
+        "deliveryGain": 0
+      },
+      "1234567-5646-48e9-b7ac-5950130ec11e": {
+        "placedOrder": -1,
+        "gameAgentActive": false,
+        "gameAgentFormula": "",
+        "backlogs": {},
+        "stock": 0,
+        "budget": 0,
+        "incomingOrder": 0,
+        "outgoingOrder": 0,
+        "incomingDelivery": 0,
+        "outgoingDelivery": 0,
+        "deliveryGain": 0
+      },
+      "hdfch5e4y-5646-48e9-b7ac-5950130ec11e": {
+        "placedOrder": -1,
+        "gameAgentActive": false,
+        "gameAgentFormula": "",
+        "backlogs": {},
+        "stock": 0,
+        "budget": 0,
+        "incomingOrder": 0,
+        "outgoingOrder": 0,
+        "incomingDelivery": 0,
+        "outgoingDelivery": 0,
+        "deliveryGain": 0
+      }
+    }
+  }
+]

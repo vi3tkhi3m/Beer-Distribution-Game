@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<ScrollPane fx:id="scrollPane" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.asd2.beerdistributiongame.frontend.CreateGameAgentHandler">
+   <content>
+      <AnchorPane fx:id="anchorPane" prefHeight="600.0" prefWidth="800.0">
+          <children>
+            <Pane fx:id="borderPane" layoutX="55.0" layoutY="184.0" prefHeight="245.0" prefWidth="726.0">
+               <children>
+                  <Button fx:id="addAlternativeFormulaButton" layoutX="14.0" layoutY="198.0" mnemonicParsing="false" onAction="#addAlternativeFormula" text="+" />
+                  <Text fx:id="thenText" layoutX="324.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="then" />
+                  <TextField fx:id="alternativeThen" layoutX="355.0" layoutY="198.0" onMouseClicked="#alternativeThenSelected" prefHeight="26.0" prefWidth="290.0" />
+                  <Text fx:id="ifText" layoutX="63.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="if" />
+                  <TextField fx:id="alternativeIf" layoutX="84.0" layoutY="198.0" onMouseClicked="#alternativeIfSelected" prefHeight="26.0" prefWidth="231.0" />
+                  <Text layoutX="84.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alternative behaviour formula" />
+                  <Text layoutX="84.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Standard behaviour formula" />
+                  <Text layoutX="19.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order=" />
+                   <TextField fx:id="defaultOrder" layoutX="84.0" layoutY="107.0" onMouseClicked="#defaultOrderSelected" prefHeight="48.0" prefWidth="431.0" />
+               </children>
+            </Pane>
+              <TextField fx:id="agentNameInput" layoutX="185.0" layoutY="91.0" prefHeight="26.0" prefWidth="431.0" promptText="Name" />
+              <Text layoutX="254.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create gameagent" textAlignment="CENTER">
+                  <font>
+                      <Font size="36.0" />
+                  </font>
+              </Text>
+              <Button fx:id="backToMenuButton" layoutX="14.0" layoutY="30.0" mnemonicParsing="false" onAction="#goBackToMainMenu" text="Main Menu">
+                  <font>
+                      <Font size="18.0" />
+                  </font>
+            </Button>
+              <Line endX="800.0000610351562" endY="-7.62939453125E-6" layoutY="81.0" startX="-100.0" />
+            <ComboBox fx:id="comboBoxInsertSymbol" layoutX="185.0" layoutY="146.0" onAction="#insertSymbol" prefHeight="26.0" prefWidth="181.0" promptText="Symbols">
+              <items>
+                  <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="+" />
+                      <String fx:value="-" />
+                      <String fx:value="*" />
+                      <String fx:value="/" />
+                      <String fx:value="^" />
+                      <String fx:value="√" />
+                      </FXCollections>
+              </items>
+            </ComboBox>
+              <ComboBox fx:id="comboBoxInsertVariable" layoutX="430.0" layoutY="146.0" onAction="#insertVariable" prefHeight="26.0" prefWidth="181.0" promptText="Variables">
+                  <items>
+                      <FXCollections fx:factory="observableArrayList">
+                          <String fx:value="ProductionCost" />
+                          <String fx:value="IncomingDelivery" />
+                          <String fx:value="Backlog" />
+                          <String fx:value="Stock" />
+                          <String fx:value="Budget" />
+                          <String fx:value="StockCost" />
+                          <String fx:value="BacklogCost" />
+                          <String fx:value="IncomingOrder" />
+                      </FXCollections>
+                  </items>
+              </ComboBox>
+            <Text layoutX="184.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mathmetical symbols" />
+            <Text layoutX="430.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usable variables" />
+            <Text fx:id="errorMessageText" fill="red" layoutX="155.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text layoutX="141.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Personal Variables" />
+            <Text layoutX="140.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+            <Text layoutX="337.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Formula" />
+            <Text fx:id="variableSymbol" layoutX="117.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\@" />
+            <TextField fx:id="personalVariableName" layoutX="141.0" layoutY="219.0" onMouseClicked="#variableNameSelected" prefHeight="26.0" prefWidth="174.0" />
+            <TextField fx:id="personalVariableFormula" layoutX="337.0" layoutY="218.0" onMouseClicked="#variableFormuleSelected" prefHeight="26.0" prefWidth="289.0" />
+            <Text fx:id="equalSymbol" layoutX="321.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="=" />
+            <Button fx:id="addPersonalVariableButton" layoutX="72.0" layoutY="219.0" mnemonicParsing="false" onAction="#addPersonalVariable" text="+" />
+              <Button fx:id="createGameAgentButton" layoutX="329.0" layoutY="435.0" mnemonicParsing="false" onAction="#saveGameAgent" text="Create gameagent" />
+          </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

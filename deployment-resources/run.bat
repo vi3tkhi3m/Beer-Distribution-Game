@@ -1,0 +1,1 @@
+start javaw -jar beerdistributiongame-1.0-SNAPSHOT.jar

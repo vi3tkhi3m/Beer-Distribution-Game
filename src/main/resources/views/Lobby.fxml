@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/" fx:controller="com.asd2.beerdistributiongame.frontend.LobbyHandler">
+    <children>
+        <Button fx:id="mainMenuButton" layoutX="20.0" layoutY="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onBackToMainMenuPressed" prefHeight="40.0" prefWidth="130.0" text="Main menu">
+            <font>
+                <Font name="Verdana" size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="startGameButton" alignment="CENTER" layoutX="640.0" layoutY="546.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onStartGamePressed" prefHeight="40.0" prefWidth="130.0" text="Start game">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Text layoutX="347.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lobby" textAlignment="CENTER">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Text>
+        <Text fx:id="hostNameLobbyText" layoutX="589.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="dsafsdaf" wrappingWidth="198.845703125">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text layoutX="540.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Host:">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Line endX="699.0" layoutX="100.0" layoutY="80.0" startX="-100.0" />
+        <Line endX="227.50001525878906" endY="-225.70709228515625" layoutX="83.0" layoutY="302.0" startX="227.50001525878906" startY="296.0999755859375" />
+        <Line endX="227.50001525878906" endY="-225.70709228515625" layoutX="-46.0" layoutY="302.0" startX="227.50001525878906" startY="296.0999755859375" />
+        <ScrollPane hbarPolicy="NEVER" layoutX="3.0" layoutY="83.0" prefHeight="515.0" prefWidth="306.0">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="517.0" prefWidth="306.0">
+                    <children>
+                        <TableView fx:id="playersTable" prefHeight="502.0" prefWidth="299.0">
+                            <columns>
+                                <TableColumn fx:id="usernameColumn" prefWidth="163.99997234344482" text="Username" />
+                                <TableColumn fx:id="roleColumn" prefWidth="126.40000915527344" text="Role" />
+                            </columns>
+                            <columnResizePolicy>
+                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                            </columnResizePolicy>
+                        </TableView>
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+        <Circle fill="#363839" layoutX="554.0" layoutY="314.0" opacity="0.06" radius="227.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="0.0" />
+        <AnchorPane layoutX="493.0" layoutY="103.0" prefHeight="152.0" prefWidth="98.0">
+            <children>
+                <AnchorPane layoutX="30.0" layoutY="88.0" prefHeight="64.0" prefWidth="73.0">
+                    <children>
+                        <Text fx:id="amountOfWholesalersChosen" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="40.96580369824551">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Text>
+                        <Text fx:id="amountOfWholesalers" layoutX="44.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" wrappingWidth="40.96581562971096">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="30.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/" wrappingWidth="13.619941473007202">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </AnchorPane>
+                <Button fx:id="wholesaleButton" layoutX="25.0" layoutY="16.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#chooseWholesalePressed" prefHeight="80.0" prefWidth="80.0" textFill="#e0e7e8">
+                    <font>
+                        <Font name="Verdana" size="18.0" />
+                    </font>
+                    <graphic>
+                        <ImageView>
+                            <image>
+                                <Image url="@../images/wholesale.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Text layoutX="24.0" layoutY="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wholesale">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="503.0" layoutY="387.0" prefHeight="130.0" prefWidth="101.0">
+            <children>
+                <Text layoutX="24.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Factory">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Text>
+                <Button fx:id="factoryButton" layoutX="14.0" layoutY="29.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#chooseFactoryPressed" prefHeight="80.0" prefWidth="80.0">
+                    <font>
+                        <Font name="Verdana" size="18.0" />
+                    </font>
+                    <graphic>
+                        <ImageView>
+                            <image>
+                                <Image url="@../images/factory.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <AnchorPane layoutX="17.0" layoutY="99.0" prefHeight="48.0" prefWidth="74.0">
+                    <children>
+                        <Text fx:id="amountOfFactoriesChosen" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="40.96581451113616">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Text>
+                        <Text fx:id="amountOfFactories" layoutX="44.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" wrappingWidth="40.96581451113616">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="30.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/" wrappingWidth="13.619941473007202">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="338.0" layoutY="255.0" prefHeight="147.0" prefWidth="87.0">
+            <children>
+                <Text layoutX="5.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Warehouse">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Text>
+                <Button fx:id="warehouseButton" layoutX="10.0" layoutY="29.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#chooseWarehousePressed" prefHeight="80.0" prefWidth="80.0">
+                    <font>
+                        <Font name="Verdana" size="18.0" />
+                    </font>
+                    <graphic>
+                        <ImageView>
+                            <image>
+                                <Image url="@../images/warehouse.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <AnchorPane layoutX="13.0" layoutY="99.0" prefHeight="64.0" prefWidth="73.0">
+                    <children>
+                        <Text fx:id="amountOfWarehouses" layoutX="44.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" wrappingWidth="40.96581562971096">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="30.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/" wrappingWidth="13.619941473007202">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Text>
+                        <Text fx:id="amountOfWarehousesChosen" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="40.96581451113616">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="662.0" layoutY="250.0" prefHeight="152.0" prefWidth="98.0">
+            <children>
+                <Text layoutX="24.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Retailer">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Text>
+                <Button fx:id="retailerButton" layoutX="14.0" layoutY="37.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#chooseRetailerPressed" prefHeight="80.0" prefWidth="80.0">
+                    <font>
+                        <Font name="Verdana" size="18.0" />
+                    </font>
+                    <graphic>
+                        <ImageView>
+                            <image>
+                                <Image url="@../images/retailer.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <AnchorPane layoutX="16.0" layoutY="109.0" prefHeight="64.0" prefWidth="73.0">
+                    <children>
+                        <Text fx:id="amountOfRetailersChosen" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="40.96581562971096">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Text>
+                        <Text fx:id="amountOfRetailers" layoutX="44.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" wrappingWidth="57.87597139559239">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="30.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/" wrappingWidth="13.619941473007202">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+        <ImageView fitHeight="80.0" fitWidth="60.0" layoutX="438.0" layoutY="357.0" opacity="0.33" rotate="152.1">
+            <image>
+                <Image url="@../images/arrow.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="80.0" fitWidth="60.0" layoutX="614.0" layoutY="188.0" opacity="0.33" rotate="-25.0">
+            <image>
+                <Image url="@../images/arrow.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="80.0" fitWidth="60.0" layoutX="438.0" layoutY="198.0" opacity="0.33" rotate="-119.5">
+            <image>
+                <Image url="@../images/arrow.png" />
+            </image>
+        </ImageView>
+      <AnchorPane fx:id="closeLobbyAlert" layoutX="255.0" layoutY="209.0" prefHeight="92.0" prefWidth="290.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="92.0" stroke="BLACK" strokeType="INSIDE" width="291.0" />
+            <Button fx:id="alertMainMenuButton" layoutX="86.0" layoutY="38.0" mnemonicParsing="false" onAction="#onAlertMainMenuPressed" prefHeight="40.0" prefWidth="118.0" text="Main menu" />
+            <Text layoutX="1.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The host has closed the lobby." textAlignment="CENTER" wrappingWidth="289.9999958872795" />
+         </children>
+      </AnchorPane>
+      <Text layoutX="540.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Host:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="hostIpLobbyText" layoutX="589.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="dsafsdaf" wrappingWidth="198.845703125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+[
+  {
+    "turnNumber": 1,
+    "playerStates": {
+        "placedOrder": {
+          "origin": "",
+          "destination": "",
+          "amount": -1
+        },
+        "gameAgentActive": false,
+        "gameAgentFormula": "",
+        "backlogs": {},
+        "stock": 0,
+        "budget": 0,
+        "incomingOrder": 0,
+        "outgoingOrder": 0,
+        "incomingDelivery": 0,
+        "outgoingDelivery": 0,
+        "deliveryGain": 0
+      },
+      "PlayerC": {
+        "role": "WAREHOUSE",
+        "placedOrder": {
+          "origin": "",
+          "destination": "",
+          "amount": -1
+        },
+        "gameAgentActive": false,
+        "gameAgentFormula": "",
+        "backlogs": {},
+        "stock": 0,
+        "budget": 0,
+        "incomingOrder": 0,
+        "outgoingOrder": 0,
+        "incomingDelivery": 0,
+        "outgoingDelivery": 0,
+        "deliveryGain": 0
+      }
+    }
+]

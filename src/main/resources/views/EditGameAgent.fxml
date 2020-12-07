@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<ScrollPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.asd2.beerdistributiongame.frontend.EditAgentHandler">
+   <content>
+      <AnchorPane fx:id="anchorPane" prefHeight="610.0" prefWidth="800.0">
+          <children>
+            <Pane fx:id="borderPane" layoutX="65.0" layoutY="194.0" prefHeight="255.0" prefWidth="726.0">
+               <children>
+                  <Button fx:id="addAlternativeFormulaButton" layoutX="14.0" layoutY="198.0" mnemonicParsing="false" onAction="#addAlternativeFormula" text="+" />
+                  <Text fx:id="thenText" layoutX="324.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="then" />
+                  <TextField fx:id="alternativeThen" layoutX="355.0" layoutY="198.0" onMouseClicked="#alternativeThenSelected" prefHeight="26.0" prefWidth="290.0" />
+                  <Text fx:id="ifText" layoutX="63.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="if" />
+                  <TextField fx:id="alternativeIf" layoutX="84.0" layoutY="198.0" onMouseClicked="#alternativeIfSelected" prefHeight="26.0" prefWidth="231.0" />
+                  <Text layoutX="84.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alternative behaviour formula" />
+                  <Text layoutX="84.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Standard behaviour formula" />
+                  <Text layoutX="19.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order=" />
+                  <TextField fx:id="defaultOrder" layoutX="84.0" layoutY="107.0" onMouseClicked="#defaultOrderSelected" prefHeight="48.0" prefWidth="431.0" />
+               </children>
+            </Pane>
+              <ComboBox fx:id="comboBoxSelectAgent" layoutX="184.0" layoutY="101.0" onAction="#loadAgentDataIntoFields" prefHeight="27.0" prefWidth="431.0" promptText="Choose an agent">
+                  <items>
+                
+            </items>
+              </ComboBox>
+              <Line endX="699.0" layoutX="101.0" layoutY="97.0" startX="-109.49998474121094" />
+              <Button fx:id="backToMenu" layoutX="47.0" layoutY="26.0" mnemonicParsing="false" onAction="#backToMenu" prefHeight="40.0" prefWidth="132.0" text="Main menu">
+                  <font>
+                      <Font size="18.0" />
+                  </font>
+              </Button>
+            <TextField fx:id="personalVariableName" layoutX="151.0" layoutY="229.0" onMouseClicked="#variableNameSelected" prefHeight="26.0" prefWidth="174.0" />
+            <TextField fx:id="personalVariableFormula" layoutX="347.0" layoutY="228.0" onMouseClicked="#variableFormulaSelected" prefHeight="26.0" prefWidth="289.0" />
+            <Text fx:id="equalSymbol" layoutX="331.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="=" />
+            <Text layoutX="150.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+            <Text layoutX="347.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Formula" />
+            <Text fx:id="variableSymbol" layoutX="127.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\@" />
+            <Button fx:id="addPersonalVariableButton" layoutX="82.0" layoutY="229.0" mnemonicParsing="false" onAction="#addPersonalVariable" text="+" />
+            <Text layoutX="151.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Personal Variables" />
+            <Text layoutX="194.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mathmetical symbols" />
+            <Text layoutX="440.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usable variables" />
+            <ComboBox fx:id="comboBoxInsertSymbol" layoutX="195.0" layoutY="156.0" onAction="#insertSymbol" prefHeight="26.0" prefWidth="181.0" promptText="Symbols">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="+" />
+                     <String fx:value="-" />
+                     <String fx:value="*" />
+                     <String fx:value="/" />
+                     <String fx:value="^" />
+                     <String fx:value="√" />
+                  </FXCollections>
+               </items>
+            </ComboBox>
+            <ComboBox fx:id="comboBoxInsertVariable" layoutX="440.0" layoutY="156.0" onAction="#insertVariable" prefHeight="26.0" prefWidth="181.0" promptText="Variables">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="ProductionCost" />
+                     <String fx:value="IncomingDelivery" />
+                     <String fx:value="Backlog" />
+                     <String fx:value="Stock" />
+                     <String fx:value="Budget" />
+                     <String fx:value="StockCost" />
+                     <String fx:value="BacklogCost" />
+                     <String fx:value="IncomingOrder" />
+                  </FXCollections>
+               </items>
+            </ComboBox>
+            <Text layoutX="275.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit gameagent">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+              <Button fx:id="buttonSaveAgent" layoutX="221.0" layoutY="488.0" mnemonicParsing="false" onAction="#saveGameAgent" prefHeight="40.0" prefWidth="150.0" text="Save Agent">
+                  <font>
+                      <Font size="18.0" />
+                  </font>
+              </Button>
+              <Button fx:id="buttonDeleteAgent" alignment="CENTER" contentDisplay="CENTER" layoutX="483.0" layoutY="488.0" mnemonicParsing="false" onAction="#deleteAgent" prefHeight="40.0" prefWidth="150.0" text="Delete Agent">
+                  <font>
+                      <Font size="18.0" />
+                  </font>
+              </Button>
+              <Text fx:id="errorMessageText" fill="red" layoutX="149.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+          </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

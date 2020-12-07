@@ -1,0 +1,8 @@
+{
+  "playerRoles" : {
+    "Retailer0" : {"role":  "RETAILER", "playerId":  "PlayerA"},
+    "Wholesaler0" : {"role":  "WHOLESALE", "playerId":  "PlayerB"},
+    "Distributor0" : {"role":  "WAREHOUSE", "playerId":  "PlayerC"},
+    "Factory0" : {"role":  "FACTORY", "playerId":  "PlayerD"}
+  }
+}

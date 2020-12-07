@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.asd2.beerdistributiongame.frontend.GameManagerHandler">
+    <center>
+        <GridPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <HBox alignment="BASELINE_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="400.0" minWidth="720.0">
+                    <children>
+                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="269.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <HBox VBox.vgrow="ALWAYS">
+                                    <children>
+                                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                            <children>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Incoming order" textAlignment="CENTER" />
+                                                <TextArea fx:id="retailerIncomingOrder" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                                    <opaqueInsets>
+                                                        <Insets />
+                                                    </opaqueInsets>
+                                                </TextArea>
+                                            </children>
+                                            <HBox.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                            </HBox.margin>
+                                        </VBox>
+                                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                            <children>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Outgoing order" textAlignment="CENTER" />
+                                                <TextArea fx:id="retailerOutgoingOrder" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                                    <opaqueInsets>
+                                                        <Insets />
+                                                    </opaqueInsets>
+                                                </TextArea>
+                                            </children>
+                                            <HBox.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                            </HBox.margin>
+                                        </VBox>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" top="10.0" />
+                                    </VBox.margin>
+                                </HBox>
+                                <VBox>
+                                    <children>
+                                        <GridPane fx:id="Retailer" hgap="10.0" minHeight="-Infinity" minWidth="240.0" prefHeight="160.0" style="-fx-border-color: black; -fx-border-width: 2px; -fx-border-radius: 10px;" vgap="10.0" VBox.vgrow="ALWAYS">
+                                            <VBox.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                            </VBox.margin>
+                                            <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                            <children>
+                                                <HBox alignment="CENTER">
+                                                    <children>
+                                                        <Text boundsType="LOGICAL_VERTICAL_CENTER" strokeType="OUTSIDE" strokeWidth="0.0" text="Retailer" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="242.8271484375" HBox.hgrow="ALWAYS">
+                                                            <font>
+                                                                <Font size="18.0" />
+                                                            </font>
+                                                        </Text>
+                                                    </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="1">
+                                                    <children>
+                                                        <Label minWidth="60.0" prefWidth="90.0" text="Name: ">
+                                                            <font>
+                                                                <Font size="18.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <TextField fx:id="retailerName" editable="false" prefHeight="39.0" prefWidth="129.0" HBox.hgrow="ALWAYS">
+                                                            <HBox.margin>
+                                                                <Insets right="10.0" />
+                                                            </HBox.margin>
+                                                            <font>
+                                                                <Font size="18.0" />
+                                                            </font>
+                                                        </TextField>
+                                                    </children>
+                                                    <GridPane.margin>
+                                                        <Insets left="10.0" />
+                                                    </GridPane.margin>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="2">
+                                                    <children>
+                                                        <Label prefWidth="90.0" text="Inventory: ">
+                                                            <font>
+                                                                <Font size="18.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <TextField fx:id="retailerInventory" editable="false" prefHeight="39.0" prefWidth="129.0" HBox.hgrow="ALWAYS">
+                                                            <font>
+                                                                <Font size="18.0" />
+                                                            </font>
+                                                            <HBox.margin>
+                                                                <Insets right="10.0" />
+                                                            </HBox.margin>
+                                                        </TextField>
+                                                    </children>
+                                                    <GridPane.margin>
+                                                        <Insets bottom="10.0" left="10.0" />
+                                                    </GridPane.margin>
+                                                </HBox>
+                                            </children>
+                                        </GridPane>
+                                    </children>
+                                </VBox>
+                                <HBox VBox.vgrow="ALWAYS">
+                                    <children>
+                                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                            <children>
+                                                <TextArea fx:id="retailerOutgoingBeer" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                                    <opaqueInsets>
+                                                        <Insets />
+                                                    </opaqueInsets>
+                                                </TextArea>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Outgoing beer" textAlignment="CENTER" />
+                                            </children>
+                                            <HBox.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                            </HBox.margin>
+                                        </VBox>
+                                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                            <children>
+                                                <TextArea fx:id="retailerIncomingBeer" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                                    <opaqueInsets>
+                                                        <Insets />
+                                                    </opaqueInsets>
+                                                </TextArea>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Incoming beer" textAlignment="CENTER" />
+                                            </children>
+                                            <HBox.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                            </HBox.margin>
+                                        </VBox>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" top="10.0" />
+                                    </VBox.margin>
+                                </HBox>
+                            </children>
+                            <HBox.margin>
+                                <Insets left="10.0" right="10.0" />
+                            </HBox.margin>
+                        </VBox>
+                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="269.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <HBox>
+                                    <children>
+                                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                            <children>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Incoming order" textAlignment="CENTER" />
+                                                <TextArea fx:id="wholesalerIncomingOrder" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                                    <opaqueInsets>
+                                                        <Insets />
+                                                    </opaqueInsets>
+                                                </TextArea>
+                                            </children>
+                                            <HBox.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                            </HBox.margin>
+                                        </VBox>
+                                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                            <children>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Outgoing order" textAlignment="CENTER" />
+                                                <TextArea fx:id="wholesalerOutgoingOrder" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                                    <opaqueInsets>
+                                                        <Insets />
+                                                    </opaqueInsets>
+                                                </TextArea>
+                                            </children>
+                                            <HBox.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                            </HBox.margin>
+                                        </VBox>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" top="10.0" />
+                                    </VBox.margin>
+                                </HBox>
+                                <VBox>
+                                    <children>
+                                        <GridPane hgap="10.0" minHeight="-Infinity" minWidth="240.0" prefHeight="160.0" style="-fx-border-color: black; -fx-border-width: 2px; -fx-border-radius: 10px;" vgap="10.0" VBox.vgrow="ALWAYS">
+                                            <VBox.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                            </VBox.margin>
+                                            <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                            <children>
+                                                <HBox fx:id="Wholesaler" alignment="CENTER">
+                                                    <children>
+                                                        <Text boundsType="LOGICAL_VERTICAL_CENTER" strokeType="OUTSIDE" strokeWidth="0.0" text="Wholesaler" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="242.8271484375" HBox.hgrow="ALWAYS">
+                                                            <font>
+                                                                <Font size="18.0" />
+                                                            </font>
+                                                        </Text>
+                                                    </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="1">
+                                                    <children>
+                                                        <Label minWidth="60.0" prefWidth="90.0" text="Name: ">
+                                                            <font>
+                                                                <Font size="18.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <TextField fx:id="wholesalerName" editable="false" prefHeight="39.0" prefWidth="129.0" HBox.hgrow="ALWAYS">
+                                                            <HBox.margin>
+                                                                <Insets right="10.0" />
+                                                            </HBox.margin>
+                                                            <font>
+                                                                <Font size="18.0" />
+                                                            </font>
+                                                        </TextField>
+                                                    </children>
+                                                    <GridPane.margin>
+                                                        <Insets left="10.0" />
+                                                    </GridPane.margin>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="2">
+                                                    <children>
+                                                        <Label prefWidth="90.0" text="Inventory: ">
+                                                            <font>
+                                                                <Font size="18.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <TextField fx:id="wholesalerInventory" editable="false" prefHeight="39.0" prefWidth="129.0" HBox.hgrow="ALWAYS">
+                                                            <font>
+                                                                <Font size="18.0" />
+                                                            </font>
+                                                            <HBox.margin>
+                                                                <Insets right="10.0" />
+                                                            </HBox.margin>
+                                                        </TextField>
+                                                    </children>
+                                                    <GridPane.margin>
+                                                        <Insets bottom="10.0" left="10.0" />
+                                                    </GridPane.margin>
+                                                </HBox>
+                                            </children>
+                                        </GridPane>
+                                    </children>
+                                </VBox>
+                                <HBox>
+                                    <children>
+                                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                            <children>
+                                                <TextArea fx:id="wholesalerOutgoingBeer" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                                    <opaqueInsets>
+                                                        <Insets />
+                                                    </opaqueInsets>
+                                                </TextArea>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Outgoing beer" textAlignment="CENTER" />
+                                            </children>
+                                            <HBox.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                            </HBox.margin>
+                                        </VBox>
+                                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                            <children>
+                                                <TextArea fx:id="wholesalerIncomingBeer" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                                    <opaqueInsets>
+                                                        <Insets />
+                                                    </opaqueInsets>
+                                                </TextArea>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Incoming beer" textAlignment="CENTER" />
+                                            </children>
+                                            <HBox.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                            </HBox.margin>
+                                        </VBox>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" top="10.0" />
+                                    </VBox.margin>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="269.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <HBox>
+                                    <children>
+                                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                            <children>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Incoming order" textAlignment="CENTER" />
+                                                <TextArea fx:id="distributorIncomingOrder" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                                    <opaqueInsets>
+                                                        <Insets />
+                                                    </opaqueInsets>
+                                                </TextArea>
+                                            </children>
+                                            <HBox.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                            </HBox.margin>
+                                        </VBox>
+                                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                            <children>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Outgoing order" textAlignment="CENTER" />
+                                                <TextArea fx:id="distributorOutgoingOrder" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                                    <opaqueInsets>
+                                                        <Insets />
+                                                    </opaqueInsets>
+                                                </TextArea>
+                                            </children>
+                                            <HBox.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                            </HBox.margin>
+                                        </VBox>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" top="10.0" />
+                                    </VBox.margin>
+                                </HBox>
+                                <VBox>
+                                    <children>
+                                        <GridPane hgap="10.0" minHeight="-Infinity" minWidth="240.0" prefHeight="160.0" style="-fx-border-color: black; -fx-border-width: 2px; -fx-border-radius: 10px;" vgap="10.0" VBox.vgrow="ALWAYS">
+                                            <VBox.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                            </VBox.margin>
+                                            <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                            <children>
+                                                <HBox fx:id="Distributor" alignment="CENTER">
+                                                    <children>
+                                                        <Text boundsType="LOGICAL_VERTICAL_CENTER" strokeType="OUTSIDE" strokeWidth="0.0" text="Distributor" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="242.8271484375" HBox.hgrow="ALWAYS">
+                                                            <font>
+                                                                <Font size="18.0" />
+                                                            </font>
+                                                        </Text>
+                                                    </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="1">
+                                                    <children>
+                                                        <Label minWidth="60.0" prefWidth="90.0" text="Name: ">
+                                                            <font>
+                                                                <Font size="18.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <TextField fx:id="distributorName" editable="false" prefHeight="39.0" prefWidth="129.0" HBox.hgrow="ALWAYS">
+                                                            <HBox.margin>
+                                                                <Insets right="10.0" />
+                                                            </HBox.margin>
+                                                            <font>
+                                                                <Font size="18.0" />
+                                                            </font>
+                                                        </TextField>
+                                                    </children>
+                                                    <GridPane.margin>
+                                                        <Insets left="10.0" />
+                                                    </GridPane.margin>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="2">
+                                                    <children>
+                                                        <Label prefWidth="90.0" text="Inventory: ">
+                                                            <font>
+                                                                <Font size="18.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <TextField fx:id="distributorInventory" editable="false" prefHeight="39.0" prefWidth="129.0" HBox.hgrow="ALWAYS">
+                                                            <font>
+                                                                <Font size="18.0" />
+                                                            </font>
+                                                            <HBox.margin>
+                                                                <Insets right="10.0" />
+                                                            </HBox.margin>
+                                                        </TextField>
+                                                    </children>
+                                                    <GridPane.margin>
+                                                        <Insets bottom="10.0" left="10.0" />
+                                                    </GridPane.margin>
+                                                </HBox>
+                                            </children>
+                                        </GridPane>
+                                    </children>
+                                </VBox>
+                                <HBox>
+                                    <children>
+                                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                            <children>
+                                                <TextArea fx:id="distributorOutgoingBeer" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                                    <opaqueInsets>
+                                                        <Insets />
+                                                    </opaqueInsets>
+                                                </TextArea>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Outgoing beer" textAlignment="CENTER" />
+                                            </children>
+                                            <HBox.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                            </HBox.margin>
+                                        </VBox>
+                                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                            <children>
+                                                <TextArea fx:id="distributorIncomingBeer" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                                    <opaqueInsets>
+                                                        <Insets />
+                                                    </opaqueInsets>
+                                                </TextArea>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Incoming beer" textAlignment="CENTER" />
+                                            </children>
+                                            <HBox.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                            </HBox.margin>
+                                        </VBox>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" top="10.0" />
+                                    </VBox.margin>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="269.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <HBox>
+                                    <children>
+                                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                            <children>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Incoming order" textAlignment="CENTER" />
+                                                <TextArea fx:id="factoryIncomingOrder" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                                    <opaqueInsets>
+                                                        <Insets />
+                                                    </opaqueInsets>
+                                                </TextArea>
+                                            </children>
+                                            <HBox.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                            </HBox.margin>
+                                        </VBox>
+                                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                            <children>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Outgoing order" textAlignment="CENTER" />
+                                                <TextArea fx:id="factoryOutgoingOrder" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                                    <opaqueInsets>
+                                                        <Insets />
+                                                    </opaqueInsets>
+                                                </TextArea>
+                                            </children>
+                                            <HBox.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                            </HBox.margin>
+                                        </VBox>
+                                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                            <children>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Production delay" textAlignment="CENTER" />
+                                                <TextArea fx:id="factoryProductionDelay" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                                    <opaqueInsets>
+                                                        <Insets />
+                                                    </opaqueInsets>
+                                                </TextArea>
+                                            </children>
+                                            <HBox.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                            </HBox.margin>
+                                        </VBox>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" top="10.0" />
+                                    </VBox.margin>
+                                </HBox>
+                                <VBox>
+                                    <children>
+                                        <GridPane hgap="10.0" minHeight="-Infinity" minWidth="240.0" prefHeight="160.0" style="-fx-border-color: black; -fx-border-width: 2px; -fx-border-radius: 10px;" vgap="10.0" VBox.vgrow="ALWAYS">
+                                            <VBox.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                            </VBox.margin>
+                                            <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                            <children>
+                                                <HBox fx:id="Factory" alignment="CENTER">
+                                                    <children>
+                                                        <Text boundsType="LOGICAL_VERTICAL_CENTER" strokeType="OUTSIDE" strokeWidth="0.0" text="Factory" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="242.8271484375" HBox.hgrow="ALWAYS">
+                                                            <font>
+                                                                <Font size="18.0" />
+                                                            </font>
+                                                        </Text>
+                                                    </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="1">
+                                                    <children>
+                                                        <Label minWidth="60.0" prefWidth="90.0" text="Name: ">
+                                                            <font>
+                                                                <Font size="18.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <TextField fx:id="factoryName" editable="false" prefHeight="39.0" prefWidth="129.0" HBox.hgrow="ALWAYS">
+                                                            <HBox.margin>
+                                                                <Insets right="10.0" />
+                                                            </HBox.margin>
+                                                            <font>
+                                                                <Font size="18.0" />
+                                                            </font>
+                                                        </TextField>
+                                                    </children>
+                                                    <GridPane.margin>
+                                                        <Insets left="10.0" />
+                                                    </GridPane.margin>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.rowIndex="2">
+                                                    <children>
+                                                        <Label prefWidth="90.0" text="Inventory: ">
+                                                            <font>
+                                                                <Font size="18.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <TextField fx:id="factoryInventory" editable="false" prefHeight="39.0" prefWidth="129.0" HBox.hgrow="ALWAYS">
+                                                            <font>
+                                                                <Font size="18.0" />
+                                                            </font>
+                                                            <HBox.margin>
+                                                                <Insets right="10.0" />
+                                                            </HBox.margin>
+                                                        </TextField>
+                                                    </children>
+                                                    <GridPane.margin>
+                                                        <Insets bottom="10.0" left="10.0" />
+                                                    </GridPane.margin>
+                                                </HBox>
+                                            </children>
+                                        </GridPane>
+                                    </children>
+                                </VBox>
+                                <HBox>
+                                    <children>
+                                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                            <children>
+                                                <TextArea fx:id="factoryOutgoingBeer" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                                    <opaqueInsets>
+                                                        <Insets />
+                                                    </opaqueInsets>
+                                                </TextArea>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Outgoing beer" textAlignment="CENTER" />
+                                            </children>
+                                            <HBox.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                            </HBox.margin>
+                                        </VBox>
+                                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                            <children>
+                                                <TextArea fx:id="factoryIncomingBeer" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                                    <opaqueInsets>
+                                                        <Insets />
+                                                    </opaqueInsets>
+                                                </TextArea>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Incoming beer" textAlignment="CENTER" />
+                                            </children>
+                                            <HBox.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                            </HBox.margin>
+                                        </VBox>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" top="10.0" />
+                                    </VBox.margin>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+            </children>
+        </GridPane>
+    </center>
+    <top>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button onMouseClicked="#onMouseClickedMainMenu" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="100.0" prefWidth="320.0" text="Main menu" HBox.hgrow="ALWAYS">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor></Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="100.0" prefWidth="640.0" text="Overview" HBox.hgrow="ALWAYS">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor></Button>
+                <Button onMouseClicked="#onMouseClickedEndGame" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="100.0" prefWidth="320.0" text="End game" HBox.hgrow="ALWAYS">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor></Button>
+            </children>
+        </HBox>
+    </top>
+</BorderPane>

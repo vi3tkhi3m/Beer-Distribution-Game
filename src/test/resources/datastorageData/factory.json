@@ -1,0 +1,18 @@
+{
+  "id": "123klasgian2o34",
+  "owner": "Kevin",
+  "controller" : "User",
+  "clients":  ["456naigsalko41", "0923fdsoi34as" ],
+  "agentCode" : {"agentCode": "1234"},
+  "stock": 20,
+  "backlog": 0,
+  "budget": 5,
+  "stockCost": 2,
+  "backlogCost": 5,
+  "productionCost": 15,
+  "incomingOrder": 8,
+  "outgoingOrder": 3,
+  "outgoingDelivery": 12,
+  "deliveryGain": 28,
+  "incomingDelivery": 13
+}

@@ -1,0 +1,21 @@
+{
+  "gameID": "oiutgx32-5678-1234-fdse-sdkalske0513",
+  "gameName" : "graphStatisticsTest",
+  "gameMode" : "GRAPH",
+  "overviewType" : "LOCAL",
+  "initialStock" : 10,
+  "initialBudget" : 100,
+  "turnDuration" : 60,
+  "backlogCost" : 2,
+  "stockCost" : 1,
+  "productionCost" : 1,
+  "maxTurns" : 40,
+  "infiniteTurns" : false,
+  "quantityOfFactories" : 1,
+  "quantityOfWarehouses" : 1,
+  "quantityOfWholesales" : 1,
+  "quantityOfRetailers" : 2,
+  "retailProfit" : 5,
+  "minCustomerDemand" : 1,
+  "maxCustomerDemand" : 20
+}

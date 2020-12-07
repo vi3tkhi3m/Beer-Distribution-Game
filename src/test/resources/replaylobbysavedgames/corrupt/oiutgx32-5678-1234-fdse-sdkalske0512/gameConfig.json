@@ -1,0 +1,11 @@
+{
+  "maxTurns" : 40,
+  "infiniteTurns" : false,
+  "quantityOfFactories" : 1,
+  "quantityOfWarehouses" : 1,
+  "quantityOfWholesales" : 1,
+  "quantityOfRetailers" : 1,
+  "retailProfit" : 5,
+  "minCustomerDemand" : 1,
+  "maxCustomerDemand" : 20
+}

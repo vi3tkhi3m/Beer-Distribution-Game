@@ -1,0 +1,45 @@
+[ {
+  "uuid" : "asdfux32-1234-4651-b6e6-sdkalske2310",
+  "username" : "Cas",
+  "ip" : "",
+  "connected" : false,
+  "role" : "NONE",
+  "gameAgent" : "",
+  "gameAgentEnabled" : false,
+  "indexNumber" : 1,
+  "gameManager" : false,
+  "host" : false
+}, {
+  "uuid" : "asdfux32-7654-1675-b6e6-sdkalske2310",
+  "username" : "Kevin",
+  "ip" : "",
+  "connected" : false,
+  "role" : "NONE",
+  "gameAgent" : "",
+  "gameAgentEnabled" : false,
+  "indexNumber" : 1,
+  "gameManager" : false,
+  "host" : false
+}, {
+  "uuid" : "oiutgx32-1973-4826-fdse-sdkalske0512",
+  "username" : "Jelle",
+  "ip" : "",
+  "connected" : false,
+  "role" : "NONE",
+  "gameAgent" : "",
+  "gameAgentEnabled" : false,
+  "indexNumber" : 1,
+  "gameManager" : false,
+  "host" : false
+}, {
+  "uuid" : "oiutgx32-5678-1234-fdse-sdkalske0512",
+  "username" : "Koen",
+  "ip" : "",
+  "connected" : false,
+  "role" : "NONE",
+  "gameAgent" : "",
+  "gameAgentEnabled" : false,
+  "indexNumber" : 1,
+  "gameManager" : false,
+  "host" : false
+} ]
